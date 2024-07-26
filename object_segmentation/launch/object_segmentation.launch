@@ -1,0 +1,8 @@
+<launch>
+  <!-- Launch Webots using a custom script -->
+  <node name="webots" pkg="object_segmentation" type="start_webots.sh" output="screen"/>
+
+  <!-- Launch Object Segmentation Node -->
+  <node name="object_segmentation_node" pkg="object_segmentation" type="object_segmentation_node.py" output="screen"/>
+</launch>
+
